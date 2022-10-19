@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-weight:bold;
+    color:gray;
+    font-size:15px;
 }
+.setflex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-div{
+    width:100vw;
+    min-height:100vh;
+    height:auto;
+}
+.child-div{
+    width:75vw;
+    height:auto;
+    background-color: lightgray;
+    box-shadow:0 0 20px gray;
+    border-radius: 20px;
+}
+.mainlist{
+    height:100px; 
+} 
+.mainlist input{
+    padding:10px;
+    border:none;
+    box-shadow: 0 0 10px white;
+    width:400px;
+    color:black;  
+}
+.setspace{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+.mainbtn{
+    height:100px;
+}
+button{
+    padding:15px;
+}
+.main{
+    padding:20px;
+    min-height:400px;
+    height:auto;
+    width:100%;
+    display:grid;
+    grid-template-rows: 1;
+    grid-template-columns: repeat(2,1fr);
+    row-gap:10px;
+    column-gap: 10px;
+}
+.main span{
+    text-align:center;
+}
+.inclist .task{
+    width:100%;
+    height:auto;
+    padding:10px;
+    margin-top:10px;
+    justify-content: start;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
+.cmplist .task{
+    width:100%;
+    height:auto;
+    padding:10px;
+    margin-top:10px;
+    justify-content: start;
+}
+.task p{
+    margin-left:10px;
+}
+@media(max-width:900px){
+    .main{
+        padding:20px;
+        min-height:400px;
+        height:auto;
+        width:100%;
+        display:grid;
+        grid-template-rows: 2;
+        grid-template-columns: repeat(1,1fr);
+        row-gap:10px;
+        column-gap: 10px;
+    }
+}
+/* .addlist{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+} */
