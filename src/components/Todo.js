@@ -10,9 +10,9 @@ const [items,setItems] = useState([]);
 const [completedTask,setCompletedTask] = useState([]);
 
 const addItem = () =>{
-    if(!inputData){}else{
-
-    
+    if(!inputData){
+        
+    }else{
     setItems([...items,inputData]);
     setInputData('');
     }
@@ -42,7 +42,7 @@ const deleteItem = (index,ele) => {
     <>
     <div className="main-div setflex">
         <div className="child-div">
-        <div class="top-section">
+        <div className='top-section'>
         <div className="mainlist setspace">
                 <p>Add items to the list:</p>
                 <input type="text" value={inputData} onChange={(e)=>setInputData(e.target.value)} placeholder="----  Add items to the list  ----" id="list"/>
