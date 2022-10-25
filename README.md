@@ -1,3 +1,5 @@
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +70,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Netlify Link added
+
+https://zingy-kelpie-c0d27a.netlify.app/
+
+Application adds the tasks to the Incomplete tasks and moves the tasks to completed task on click on checkbox.Completed tasks can then be deleted by clicking on the delete button.
